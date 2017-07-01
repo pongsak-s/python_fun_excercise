@@ -15,7 +15,7 @@ def make_histogram(points, bucket_size): return Counter(bucketize(point, bucket_
 
 def plot_historgram(points, bucket_size, title = ""):
 	histogram = make_histogram(points, bucket_size)
-	plt.bar(histogram.keys(), histogram.values(), width=bucket_size)
+	plt.bar( list(histogram.keys()), histogram.values(), width=bucket_size)
 	plt.title = title
 	plt.show()
 
