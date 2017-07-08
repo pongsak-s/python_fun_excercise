@@ -1,6 +1,5 @@
 
 
-
 def isAdjacent(a,b):
 	"""check if two coordinate is adjacent"""
 	a_i = a[0]
